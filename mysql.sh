@@ -50,7 +50,7 @@ if[$? -ne 0]
 then
   echo "MYSQL Root password not setup" &>>$LOG_FILE_NAME
   mysql_secure_installation --set-root-pass ExpenseApp@1
-  VALIDATE &? "Setting Root Password"
+  VALIDATE $? "Setting Root Password"
 else
    echo -e "MYSQL Root password already setup .... $Y SKIPPING $N"
 fi  
