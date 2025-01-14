@@ -29,7 +29,8 @@ CHECK_ROOT(){
     fi
 }
 
-echo "Script Started executing at:"  $TIMESTAMP &>>&LOG_FILE_NAME
+
+echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 CHECK_ROOT
 
